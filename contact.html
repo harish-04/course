@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRJC</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .caries{
+        font-family:bold Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        width: 100%;
+        font-size: 60px;
+        text-align: center;
+        color:rgb(245, 12, 12);
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding: 10px;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        gap: 20px;
+        color: blueviolet; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;       
+    }
+    nav ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .styled_name:link{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .styled_name{
+        color: rgb(14, 62, 205);
+        text-decoration: none;
+    }
+    .styled_name:hover{
+        color: rgb(255, 255, 254);
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .styled_link:link{
+        color: rgb(254, 255, 255);
+        text-decoration: none;
+    }
+    .styled_link{
+        color: rgb(135, 247, 8);
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .styled_link:hover{
+        color: rgb(39, 250, 50);
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    div h1{
+        justify-content: center;
+        text-align: center;
+        margin: 30px;
+        padding: 25px  15px;
+        color: rgb(82, 42, 177);
+    }
+    section{
+        padding: 2rem 10cap;
+    }
+    #menu-bar{
+        font-size: 3rem;
+        cursor: pointer;
+        color:#666;
+        border:.1rem solid #666;
+        border-radius: .3rem;
+        padding:.5rem 1.5rem;
+        display: none;
+    }
+    .contact #txt{
+        color: rgb(82, 42, 177);
+    }
+    .contact{
+        text-align: center;
+        justify-content: center;
+        display: grid;
+    }
+    .contact .con{
+        padding: 4rem;
+        box-shadow: 0.2rem 0.5rem rgba(0,0,0,.1);
+        background:#f6f6f6;
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem;
+        border-radius: 1rem;
+    }
+    .contact .con .con1 .center
+    {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .head1{
+        text-align: center;
+        font-size: 25px;
+        color: rgb(0, 0, 160);
+    }
+    .styled_header{
+        color: rgb(245, 12, 12);;
+        text-decoration: none;
+    }
+    img{
+        width: 120px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .image{
+        display: flex;
+        position: sticky;
+    }
+    .cell{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            font-size: 15px;
+        }
+        .cell1{
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            display: flex;
+            font-size: 15px;
+        }
+        /* jsnlwe */
+    footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            padding-top:20px;
+            padding-bottom:20px;
+            text-align:center;
+            font-size:20px;
+            font-weight:bold;
+        }
+</style>
+<body>
+    <header>
+        <div class="image"><img src="./images/logo.png" alt="logo" class="img">
+            <div class="caries" >
+                <a href="index.html" class="styled_header">SREE JAYARAMA CARRIERS</a>
+                <div class="head1"> COMMISSION AGENTS</div>
+            </div>
+        </div>
+        <div class="cell"><b>Cell : 9849438700</b></div>
+        <div class="cell1"><b>9848438700</b></div>
+    </header>
+    <nav class="srj" id="home">
+        
+        <div>
+            <ul>
+                <li><a href="index.html" class="styled_link">Home</a></li>
+                <li><a href="about.html" class="styled_link">About</a></li>
+                <li><a href="#" class="styled_link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+<section class="contact"> <br><br><br><br>
+    <h1 id="txt">CONTACT</h1>
+    <div class="con">
+        
+        <form action="submit.html" class="contactForm">
+            <div class="con1">
+                &nbsp;<label class="center">Name: </label>&nbsp; <input type="text" placeholder="Enter name"><br><br>
+                <label class="center">Mobile Number: </label>&nbsp; <input type="text" placeholder="Enter Mobile Number"><br><br>
+                <label class="center">Tanker Number: </label>&nbsp; <input type="text" placeholder="AP 00 DQ-7832"><br><br>
+                <label class="center">Email: </label>&nbsp; <input type="text" placeholder="Enter E-mail"><br><br>
+                <input type="submit" value="submit">&nbsp;&nbsp; <input type="reset" value="reset">
+            </div>
+        </form>
+    </div>
+</section>  
+<footer class="footer">
+    #D.No. 7-4-5, N.H.No 44, Gaganpahad, R.R.Dist. Hyderabad-52(T.S)
+    <div class="share"><a href="https://www.facebook.com/"><i class="fa fa-facebook-official fa-2x" style="color: blue;"></a></i>
+        <a href=""><i class="fa fa-envelope" style="color: #ef0606c0;"></i></a>
+    </div>
+</footer>
+</body>
+<!-- <footer>
+    <label >hello</label>
+</footer> -->
+</html>
