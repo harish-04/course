@@ -103,8 +103,12 @@
     .contact .con .con1 .center
     {
         align-items: center;
+        flex-direction: column;
         margin: 0;
         padding: 0;
+    }
+    .con1{
+        
     }
     .head1{
         text-align: center;
@@ -138,6 +142,9 @@
             right: 20px;
             display: flex;
             font-size: 15px;
+        }
+        .nameInput{
+            padding: 1rem;
         }
         /* jsnlwe */
     footer {
@@ -180,11 +187,14 @@
         
         <form action="submit.html" class="contactForm">
             <div class="con1">
-                &nbsp;<label class="center">Name: </label>&nbsp; <input type="text" class="input name" id="btn-name" placeholder="Enter name"><br><br>
-                <label class="center">Mobile Number: </label>&nbsp; <input type="text" class="input mblno" id="btn-mbl" placeholder="Enter Mobile Number"><br><br>
-                <label class="center">Tanker Number: </label>&nbsp; <input type="text" class="input tanker" id="btn-tanker" placeholder="AP 00 DQ-7832"><br><br>
-                <label class="center">Email: </label>&nbsp; <input type="text" class="input email" id="btn-email" placeholder="Enter E-mail"><br><br>
-                <input type="submit" value="submit">&nbsp;&nbsp; <input type="reset" class="input reset" id="btn-reset" value="reset">
+                <div class="name" style="font-size: 25px; justify-content: left;display: flex;">Name</div>
+                <div class="nameInput"><input type="text" placeholder="Enter the name"></div>
+                <div class="mobileNo" style="font-size: 25px; justify-content: left;display: flex;">Mobile Number</div>
+                <div class="mblNoInput"><input type="text" placeholder="Enter Mobie Number"></div>
+                <div class="tankerNo" style="font-size: 25px; justify-content: left;display: flex;">Tanker Number</div>
+                <div class="tankerNoInput"><input type="text" placeholder="AP 00 DQ-7832"></div>
+                <div class="email" style="font-size: 25px; justify-content: left;display: flex;">Email</div>
+                <div class="emailInput"><input type="text" placeholder="Enter E-mail"></div>
             </div>
         </form>
     </div>
